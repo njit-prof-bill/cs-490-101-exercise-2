@@ -101,7 +101,7 @@ On point for each of the following:
 ---
 
 ## Submission Deadline
-- Your pull request must be submitted by Sunday 2/1/2025 at 11:59.
+- Your pull request must be submitted by Sunday 9/14/2025 at 11:59.
 
 ---
 
