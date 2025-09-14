@@ -1,4 +1,12 @@
 def gcd(a: int, b: int) -> int:
+
+    """
+    Calculate the greatest common divisor (GCD) of two integers a and b
+    using the Euclidean algorithm.
+    """
+    # Implement your solution here
+    pass
+
     # Check for invalid types
     if not isinstance(a, int) or not isinstance(b, int):
         print("Invalid Type Error: Only Integers are valid")
