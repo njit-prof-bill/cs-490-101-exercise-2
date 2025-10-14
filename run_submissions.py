@@ -73,6 +73,7 @@ def load_and_run():
             run_gcd_test(gcd_func, 101, 10, 1)
             run_gcd_test(gcd_func, 270, 192, 6)
             # Edge case test cases
+            print(f"Running {module_name}'s edge case tests...")
             run_gcd_test(gcd_func, 0, 0, None)  # Both numbers are zero
             run_gcd_test(gcd_func, -54, 24, 6)  # One negative number
             run_gcd_test(gcd_func, 54, -24, 6)  # One negative number
@@ -91,3 +92,4 @@ def load_and_run():
 # This is the entry point of the script
 if __name__ == "__main__":
     load_and_run()
+
