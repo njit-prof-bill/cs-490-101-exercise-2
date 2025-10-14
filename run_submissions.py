@@ -17,7 +17,9 @@ def run_gcd_test(gcd_func, a, b, expected):
     except ZeroDivisionError:
         print(f"FAIL: gcd({a}, {b}) raised ZeroDivisionError")
     except RecursionError:
-        print(f"FAIL: gcd({a}, {b}) raised RecursionError (maximum recursion depth exceeded)")
+        print(
+            f"FAIL: gcd({a}, {b}) raised RecursionError (maximum recursion depth exceeded)"
+        )
 
 
 def load_and_run():
