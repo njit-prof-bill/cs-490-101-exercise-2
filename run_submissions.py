@@ -8,11 +8,16 @@ def run_gcd_test(gcd_func, a, b, expected):
     """
     Runs a test case for the gcd function.
     """
-    result = gcd_func(a, b)
-    if result == expected:
-        print(f"PASS: gcd({a}, {b}) = {result}")
-    else:
-        print(f"FAIL: gcd({a}, {b}) = {result}, expected {expected}")
+    try:
+        result = gcd_func(a, b)
+        if result == expected:
+            print(f"PASS: gcd({a}, {b}) = {result}")
+        else:
+            print(f"FAIL: gcd({a}, {b}) = {result}, expected {expected}")
+    except ZeroDivisionError:
+        print(f"FAIL: gcd({a}, {b}) raised ZeroDivisionError")
+    except RecursionError:
+        print(f"FAIL: gcd({a}, {b}) raised RecursionError (maximum recursion depth exceeded)")
 
 
 def load_and_run():
